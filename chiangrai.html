@@ -9,32 +9,107 @@ body {
   font-family: sans-serif;
   background: #0f172a;
   color: white;
-  text-align: center;
+  margin: 0;
+}
+
+.container {
   padding: 40px;
+  text-align: center;
 }
-img {
+
+h1 {
+  color: #38bdf8;
+  font-size: 40px;
+}
+
+p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.gallery img {
   width: 300px;
-  border-radius: 10px;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
+
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  color: #22c55e;
+}
+
 a {
   color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 </style>
 </head>
 
 <body>
 
-<h1>เชียงราย</h1>
+<div class="container">
 
-<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<h1>จังหวัดเชียงราย</h1>
 
 <p>
-เชียงใหม่เป็นจังหวัดที่มีภูเขา ธรรมชาติสวยงาม  
-อากาศเย็น เหมาะกับการท่องเที่ยว
+เชียงรายเป็นจังหวัดทางภาคเหนือของประเทศไทย  
+มีธรรมชาติที่สวยงาม ภูเขา ทะเลหมอก และวัฒนธรรมล้านนา  
+เป็นแหล่งท่องเที่ยวที่เงียบสงบ เหมาะสำหรับการพักผ่อน  
+และสัมผัสวิถีชีวิตแบบเรียบง่าย
 </p>
 
-<br>
+<div class="gallery">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMWhV5FNe7eNax8lNvvoXb11BTRz3ZFQ_2mw&s" alt="วัดร่องขุ่น">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM5EI2ALFVXj8BK7vt4uHnW6vactOaD1czIA&s" alt="ภูชี้ฟ้า">
+  <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?w=800" alt="ไร่ชาเชียงราย">
+</div>
+
+<div class="section">
+  <h2>สถานที่ท่องเที่ยวแนะนำ</h2>
+  <p>
+    • วัดร่องขุ่น (วัดสีขาว) <br>
+    • ภูชี้ฟ้า (ชมทะเลหมอก) <br>
+    • สิงห์ปาร์คเชียงราย <br>
+    • ไร่ชาฉุยฟง
+  </p>
+</div>
+
+<div class="section">
+  <h2>จุดเด่นของเชียงราย</h2>
+  <p>
+    • อากาศเย็นสบายตลอดปี <br>
+    • มีธรรมชาติและภูเขาสวยงาม <br>
+    • วัดสวยระดับโลก <br>
+    • วัฒนธรรมล้านนาที่เป็นเอกลักษณ์
+  </p>
+</div>
+
+<br><br>
 <a href="index.html">⬅ กลับหน้าแรก</a>
+
+</div>
 
 </body>
 </html>

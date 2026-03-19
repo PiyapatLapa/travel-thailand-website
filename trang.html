@@ -3,20 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <title>ตรัง</title>
+
 <style>
-body{font-family:sans-serif;background:#0f172a;color:white;text-align:center;padding:40px;}
-img{width:300px;border-radius:10px;}
-a{color:#38bdf8;text-decoration:none;}
+body {
+  font-family: sans-serif;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+}
+
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #38bdf8;
+  font-size: 40px;
+}
+
+p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover; 
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  color: #22c55e;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 </style>
 </head>
+
 <body>
 
-<h1>ตรัง</h1>
-<img src="https://source.unsplash.com/400x300/?thailand,sea">
-<p>ทะเลเงียบสงบและสวยงาม</p>
-<ul><li>เกาะกระดาน</li><li>ถ้ำมรกต</li></ul>
+<div class="container">
 
-<br><a href="index.html">⬅ กลับหน้าแรก</a>
+<h1>จังหวัดตรัง</h1>
+
+<p>
+ตรังเป็นจังหวัดทางภาคใต้ของประเทศไทย  
+ขึ้นชื่อเรื่องทะเลสงบ น้ำใส และเกาะสวย  
+เหมาะสำหรับการพักผ่อนและท่องเที่ยวเชิงธรรมชาติ
+</p>
+
+<div class="gallery">
+  <img src="https://f.ptcdn.info/333/080/000/rszo31sraav5IQjazNhK-o.jpg" alt="เกาะกระดาน">
+  <img src="https://img.wongnai.com/p/1920x0/2019/10/14/68355e2d170940cbaad5ddf9d3683e9a.jpg" alt="ถ้ำมรกต">
+  <img src="https://files.thailandtourismdirectory.go.th/assets/upload/info/attraction/1842/20171023ef83eb942b081f04a611a6144b9f0378010437.jpg" alt="ทะเลตรัง">
+</div>
+
+<div class="section">
+  <h2>สถานที่ท่องเที่ยวแนะนำ</h2>
+  <p>
+    • เกาะกระดาน <br>
+    • ถ้ำมรกต <br>
+    • เกาะสุกร <br>
+    • อ่าวเจ้าไหม
+  </p>
+</div>
+
+<div class="section">
+  <h2>จุดเด่นของตรัง</h2>
+  <p>
+    • ทะเลสงบ น้ำใส <br>
+    • เกาะและหาดสวย <br>
+    • เหมาะกับการพักผ่อนและดำน้ำ <br>
+    • ธรรมชาติอุดมสมบูรณ์
+  </p>
+</div>
+
+<br><br>
+<a href="index.html">⬅ กลับหน้าแรก</a>
+
+</div>
 
 </body>
 </html>

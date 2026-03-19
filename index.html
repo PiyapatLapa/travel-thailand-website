@@ -133,28 +133,18 @@ h2 {
   transform: scale(1.05);
 }
 
+/* --- แก้ไข: เอาเส้น ::after ออกแล้ว --- */
 .decorated-title {
   display: inline-block;
   font-size: 2.8rem; 
   color: #38bdf8;
   border: 2px solid #38bdf8; 
-  padding: 15px 30px; 
+  padding: 15px 40px; 
   border-radius: 50px; 
   box-shadow: 0 0 20px rgba(56, 189, 248, 0.4); 
   margin-bottom: 30px; 
+  position: relative;
 }
-
-.decorated-title::after {
-  content: '';
-  position: absolute;
-  bottom: 8px;
-  left: 20%; 
-  width: 60%; 
-  height: 4px; 
-  background: #22c55e; 
-  border-radius: 2px;
-}
-
 
 @media (max-width: 640px) {
   .profile-container {
@@ -162,10 +152,9 @@ h2 {
     padding: 25px;
   }
   
-  
   .decorated-title {
     font-size: 2rem;
-    padding: 10px 20px;
+    padding: 10px 25px;
   }
 }
 </style>

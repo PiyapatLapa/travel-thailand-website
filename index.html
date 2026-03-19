@@ -85,7 +85,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* --- ส่วนที่แก้ไข: Profile Card Style --- */
 .profile-container {
   max-width: 500px;
   margin: 40px auto;
@@ -134,10 +133,39 @@ h2 {
   transform: scale(1.05);
 }
 
+.decorated-title {
+  display: inline-block;
+  font-size: 2.8rem; 
+  color: #38bdf8;
+  border: 2px solid #38bdf8; 
+  padding: 15px 30px; 
+  border-radius: 50px; 
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4); 
+  margin-bottom: 30px; 
+}
+
+.decorated-title::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 20%; 
+  width: 60%; 
+  height: 4px; 
+  background: #22c55e; 
+  border-radius: 2px;
+}
+
+
 @media (max-width: 640px) {
   .profile-container {
     margin: 20px;
     padding: 25px;
+  }
+  
+  
+  .decorated-title {
+    font-size: 2rem;
+    padding: 10px 20px;
   }
 }
 </style>
@@ -154,7 +182,7 @@ h2 {
 </nav>
 
 <section>
-  <h1 style="font-size: 2.5rem; color: #38bdf8;">เที่ยวทั่วไทย 4 ภาค</h1>
+  <h1 class="decorated-title">เที่ยวทั่วไทย 4 ภาค</h1>
 </section>
 
 <section id="north">

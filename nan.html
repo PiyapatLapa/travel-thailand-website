@@ -9,32 +9,106 @@ body {
   font-family: sans-serif;
   background: #0f172a;
   color: white;
-  text-align: center;
+  margin: 0;
+}
+
+.container {
   padding: 40px;
+  text-align: center;
 }
-img {
+
+h1 {
+  color: #38bdf8;
+  font-size: 40px;
+}
+
+p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.gallery img {
   width: 300px;
-  border-radius: 10px;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
+
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  color: #22c55e;
+}
+
 a {
   color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 </style>
 </head>
 
 <body>
 
-<h1>น่าน</h1>
+<div class="container">
 
-<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<h1>จังหวัดน่าน</h1>
 
 <p>
-น่าน ธรรมชาติสวยงาม<br>
-อากาศเย็น เหมาะกับการท่องเที่ยว
+น่านเป็นจังหวัดเล็ก ๆ ทางภาคเหนือของประเทศไทย  
+มีธรรมชาติที่อุดมสมบูรณ์ ภูเขาสวยงาม และวัฒนธรรมที่เรียบง่าย  
+เหมาะสำหรับการท่องเที่ยวแบบสงบและใกล้ชิดธรรมชาติ
 </p>
 
-<br>
+<div class="gallery">
+  <img src="https://f.ptcdn.info/715/034/000/1440308534-IMG3651-o.jpg" alt="ภูเขาน่าน">
+  <img src="https://cms.dmpcdn.com/travel/2020/09/29/6e982bf0-0239-11eb-97e4-65e826b4aa8c_original.jpg" alt="ดอยเสมอดาว">
+  <img src="https://www.dasta.or.th/uploads/article/202107/1625238035_c5f99af69f1ce863cb56.jpg" alt="วัดภูมินทร์">
+</div>
+
+<div class="section">
+  <h2>สถานที่ท่องเที่ยวแนะนำ</h2>
+  <p>
+    • ดอยเสมอดาว <br>
+    • วัดภูมินทร์ <br>
+    • บ่อเกลือ <br>
+    • ถนนลอยฟ้า 1081
+  </p>
+</div>
+
+<div class="section">
+  <h2>จุดเด่นของน่าน</h2>
+  <p>
+    • ธรรมชาติสงบ ไม่วุ่นวาย <br>
+    • วิวภูเขาและทะเลหมอก <br>
+    • วัฒนธรรมท้องถิ่นที่เป็นเอกลักษณ์ <br>
+    • เหมาะกับการพักผ่อนชิล ๆ
+  </p>
+</div>
+
+<br><br>
 <a href="index.html">⬅ กลับหน้าแรก</a>
+
+</div>
 
 </body>
 </html>

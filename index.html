@@ -10,12 +10,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   background: #0f172a;
-  color: white;
+  color: white; /* สีฟอนต์หลักของหน้า */
   padding-top: 80px;
 }
 
@@ -24,58 +24,137 @@ nav {
   top: 0;
   width: 100%;
   background: #020617;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
+  z-index: 100;
 }
 
 nav a {
   color: white;
-  margin: 10px;
+  margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 nav a:hover {
   color: #38bdf8;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+section {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-section {
-  padding: 40px;
-  text-align: center;
+h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
+}
+
+/* ส่วนที่แก้: ทำให้ลิงก์ที่ครอบการ์ดเป็นสีขาวและไม่มีเส้นใต้ */
+.cards a {
+  text-decoration: none;
+  color: white; 
 }
 
 .card {
   background: #1e293b;
-  padding: 10px;
-  width: 200px;
-  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  border-radius: 12px;
   transition: 0.3s;
+  border: 1px solid #334155;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
+  border-color: #38bdf8;
 }
 
 .card img {
   width: 100%;
-  height: 120px;
+  height: 140px;
   object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+/* Contact Form */
+.contact-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #1e293b;
+  border-radius: 15px;
+}
+
+.contact-container h2 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* แก้ให้ตัวหนังสือที่พิมพ์ในฟอร์มเป็นสีขาว */
+.contact-container input,
+.contact-container textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  font-size: 16px;
+  width: 100%;
+  background: #0f172a;
+  color: white; 
+  outline: none;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #38bdf8;
+}
+
+.contact-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-container button:hover {
+  background: #22c55e;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .contact-container {
+    margin: 20px;
+    padding: 15px;
+  }
 }
 </style>
 
 </head>
-
 <body>
 
 <nav>
@@ -83,54 +162,63 @@ section {
   <a href="#central">กลาง</a>
   <a href="#isan">อีสาน</a>
   <a href="#south">ใต้</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <section>
-  <h1>เที่ยวทั่วไทย 4 ภาค</h1>
+  <h1 style="font-size: 2.5rem; color: #38bdf8;">เที่ยวทั่วไทย 4 ภาค</h1>
 </section>
 
-<!-- ภาคเหนือ -->
 <section id="north">
-<h2>ภาคเหนือ</h2>
-<div class="cards">
-<a href="chiangmai.html"><div class="card"><img src="https://blog.bangkokair.com/wp-content/uploads/2023/09/visit-chiang-mai-during-the-rainy-season-1.jpeg"><h3>เชียงใหม่</h3></div></a>
-<a href="chiangrai.html"><div class="card"><img src="https://img.kapook.com/u/2015/passakorn/June15/abroad/watrongkhun_600-400.jpg"><h3>เชียงราย</h3></div></a>
-<a href="maehongson.html"><div class="card"><img src="https://blog.bangkokair.com/wp-content/uploads/2023/07/activities-Mae-Hong-Son-1.jpeg"><h3>แม่ฮ่องสอน</h3></div></a>
-<a href="nan.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TOr0DDTpQZqj6NY5tqZ4Ph9lQqRF_I-C7g&s"><h3>น่าน</h3></div></a>
-</div>
+  <h2>ภาคเหนือ</h2>
+  <div class="cards">
+    <a href="chiangmai.html"><div class="card"><img src="https://blog.bangkokair.com/wp-content/uploads/2023/09/visit-chiang-mai-during-the-rainy-season-1.jpeg"><h3>เชียงใหม่</h3></div></a>
+    <a href="chiangrai.html"><div class="card"><img src="https://img.kapook.com/u/2015/passakorn/June15/abroad/watrongkhun_600-400.jpg"><h3>เชียงราย</h3></div></a>
+    <a href="maehongson.html"><div class="card"><img src="https://blog.bangkokair.com/wp-content/uploads/2023/07/activities-Mae-Hong-Son-1.jpeg"><h3>แม่ฮ่องสอน</h3></div></a>
+    <a href="nan.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TOr0DDTpQZqj6NY5tqZ4Ph9lQqRF_I-C7g&s"><h3>น่าน</h3></div></a>
+  </div>
 </section>
 
-<!-- ภาคกลาง -->
 <section id="central">
-<h2>ภาคกลาง</h2>
-<div class="cards">
-<a href="bangkok.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYiM6vdlhtFyXDAu-O_AMu-BVt4JoNIn_fuA&s"><h3>กรุงเทพ</h3></div></a>
-<a href="ayutthaya.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvZ5OyYs9y2yUVpd4602y5SjfzP0-A43cXAg&s"><h3>อยุธยา</h3></div></a>
-<a href="kanchanaburi.html"><div class="card"><img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa6rYsbjKnAPLKiWE3N29k656dGKHFwYZDx3XylUV0WRC4M8omkMS.jpg"><h3>กาญจนบุรี</h3></div></a>
-<a href="ratchaburi.html"><div class="card"><img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5LRBmHfaVQidJ5G7BjFpdbfY1qOy2oCUvdGNcUKRc2nRkMODbyE.jpg"><h3>ราชบุรี</h3></div></a>
-</div>
+  <h2>ภาคกลาง</h2>
+  <div class="cards">
+    <a href="bangkok.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYiM6vdlhtFyXDAu-O_AMu-BVt4JoNIn_fuA&s"><h3>กรุงเทพ</h3></div></a>
+    <a href="ayutthaya.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvZ5OyYs9y2yUVpd4602y5SjfzP0-A43cXAg&s"><h3>อยุธยา</h3></div></a>
+    <a href="kanchanaburi.html"><div class="card"><img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa6rYsbjKnAPLKiWE3N29k656dGKHFwYZDx3XylUV0WRC4M8omkMS.jpg"><h3>กาญจนบุรี</h3></div></a>
+    <a href="ratchaburi.html"><div class="card"><img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5LRBmHfaVQidJ5G7BjFpdbfY1qOy2oCUvdGNcUKRc2nRkMODbyE.jpg"><h3>ราชบุรี</h3></div></a>
+  </div>
 </section>
 
-<!-- ภาคอีสาน -->
 <section id="isan">
-<h2>ภาคอีสาน</h2>
-<div class="cards">
-<a href="khonkaen.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEcDjZOZhIBKl0uRIqag49zjxDNUMqvl9HYA&s"><h3>ขอนแก่น</h3></div></a>
-<a href="ubon.html"><div class="card"><img src="https://ubn.onab.go.th/th/file/get/file/20200827d41d8cd98f00b204e9800998ecf8427e110114.jpg"><h3>อุบลราชธานี</h3></div></a>
-<a href="korat.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyBsCZcMb9HMdEzxifmDLgKXplNVGnGYNCoA&s"><h3>นครราชสีมา</h3></div></a>
-<a href="loei.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqHH5PrVE8kwmjjWao60Lt5R1Ucm2RR7I77w&s"><h3>เลย</h3></div></a>
-</div>
+  <h2>ภาคอีสาน</h2>
+  <div class="cards">
+    <a href="khonkaen.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEcDjZOZhIBKl0uRIqag49zjxDNUMqvl9HYA&s"><h3>ขอนแก่น</h3></div></a>
+    <a href="ubon.html"><div class="card"><img src="https://ubn.onab.go.th/th/file/get/file/20200827d41d8cd98f00b204e9800998ecf8427e110114.jpg"><h3>อุบลราชธานี</h3></div></a>
+    <a href="korat.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyBsCZcMb9HMdEzxifmDLgKXplNVGnGYNCoA&s"><h3>นครราชสีมา</h3></div></a>
+    <a href="loei.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqHH5PrVE8kwmjjWao60Lt5R1Ucm2RR7I77w&s"><h3>เลย</h3></div></a>
+  </div>
 </section>
 
-<!-- ภาคใต้ -->
 <section id="south">
-<h2>ภาคใต้</h2>
-<div class="cards">
-<a href="phuket.html"><div class="card"><img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa6rpUAJ54LpJHlCam0RYXxsoeLpEdgcExN2D3oySvrz6pf1RRbEC.jpg"><h3>ภูเก็ต</h3></div></a>
-<a href="krabi.html"><div class="card"><img src="https://travel.mthai.com/app/uploads/2015/03/OnCamera-1.jpg"><h3>กระบี่</h3></div></a>
-<a href="suratthani.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTPEmaV9i1vWL9LH2LSFG56E2OaWuQ03xFUA&s"><h3>สุราษฎร์ธานี</h3></div></a>
-<a href="trang.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmn0CAsR48iAx4K3fcyoep4ETi5iVCBHGNUA&s"><h3>ตรัง</h3></div></a>
-</div>
+  <h2>ภาคใต้</h2>
+  <div class="cards">
+    <a href="phuket.html"><div class="card"><img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa6rpUAJ54LpJHlCam0RYXxsoeLpEdgcExN2D3oySvrz6pf1RRbEC.jpg"><h3>ภูเก็ต</h3></div></a>
+    <a href="krabi.html"><div class="card"><img src="https://travel.mthai.com/app/uploads/2015/03/OnCamera-1.jpg"><h3>กระบี่</h3></div></a>
+    <a href="suratthani.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTPEmaV9i1vWL9LH2LSFG56E2OaWuQ03xFUA&s"><h3>สุราษฎร์ธานี</h3></div></a>
+    <a href="trang.html"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmn0CAsR48iAx4K3fcyoep4ETi5iVCBHGNUA&s"><h3>ตรัง</h3></div></a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-container">
+    <h2>ติดต่อเรา</h2>
+    <form action="mailto:piyapat.lapa@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="ชื่อของคุณ" required>
+      <input type="email" name="email" placeholder="อีเมลของคุณ" required>
+      <textarea name="message" placeholder="ข้อความ" required></textarea>
+      <button type="submit">ส่งข้อความ</button>
+    </form>
+  </div>
 </section>
 
 </body>

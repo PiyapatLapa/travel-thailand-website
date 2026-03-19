@@ -3,20 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <title>สุราษฎร์ธานี</title>
+
 <style>
-body{font-family:sans-serif;background:#0f172a;color:white;text-align:center;padding:40px;}
-img{width:300px;border-radius:10px;}
-a{color:#38bdf8;text-decoration:none;}
+body {
+  font-family: sans-serif;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+}
+
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #38bdf8;
+  font-size: 40px;
+}
+
+p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  color: #22c55e;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 </style>
 </head>
+
 <body>
 
-<h1>สุราษฎร์ธานี</h1>
-<img src="https://source.unsplash.com/400x300/?thailand,island">
-<p>เกาะสมุยและธรรมชาติ</p>
-<ul><li>เกาะสมุย</li><li>เขื่อนเชี่ยวหลาน</li></ul>
+<div class="container">
 
-<br><a href="index.html">⬅ กลับหน้าแรก</a>
+<h1>จังหวัดสุราษฎร์ธานี</h1>
+
+<p>
+สุราษฎร์ธานีเป็นจังหวัดทางภาคใต้ของประเทศไทย  
+มีทะเลและเกาะสวยงาม เช่น เกาะสมุย เกาะพงัน  
+เหมาะสำหรับการพักผ่อนและท่องเที่ยวเชิงธรรมชาติ
+</p>
+
+<div class="gallery">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqym-8UcX1Wn4TiedmbhSC0CQGtj8n4OLkIw&s" alt="เกาะสมุย">
+  <img src="https://f.ptcdn.info/214/030/000/1428602654-DSC00625-o.jpg" alt="เขื่อนเชี่ยวหลาน">
+  <img src="https://cbtthailand.dasta.or.th/upload-file-api/Resources/RelateAttraction/Images/RAT840413/1.jpeg" alt="ทะเลสุราษฎร์">
+</div>
+
+<div class="section">
+  <h2>สถานที่ท่องเที่ยวแนะนำ</h2>
+  <p>
+    • เกาะสมุย <br>
+    • เขื่อนเชี่ยวหลาน <br>
+    • เกาะพงัน <br>
+    • เกาะเต่า
+  </p>
+</div>
+
+<div class="section">
+  <h2>จุดเด่นของสุราษฎร์ธานี</h2>
+  <p>
+    • เกาะสวยและน้ำใส <br>
+    • ธรรมชาติและกิจกรรมทางน้ำ <br>
+    • เหมาะสำหรับพักผ่อนและดำน้ำ <br>
+    • อาหารทะเลสดอร่อย
+  </p>
+</div>
+
+<br><br>
+<a href="index.html">⬅ กลับหน้าแรก</a>
+
+</div>
 
 </body>
 </html>

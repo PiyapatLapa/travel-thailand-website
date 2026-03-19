@@ -9,32 +9,106 @@ body {
   font-family: sans-serif;
   background: #0f172a;
   color: white;
-  text-align: center;
+  margin: 0;
+}
+
+.container {
   padding: 40px;
+  text-align: center;
 }
-img {
+
+h1 {
+  color: #38bdf8;
+  font-size: 40px;
+}
+
+p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.gallery img {
   width: 300px;
-  border-radius: 10px;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
+
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  color: #22c55e;
+}
+
 a {
   color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 </style>
 </head>
 
 <body>
 
-<h1>แม่ฮ่องสอน</h1>
+<div class="container">
 
-<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<h1>จังหวัดแม่ฮ่องสอน</h1>
 
 <p>
-แม่ฮ่องสอนภูเขา ธรรมชาติสวยงาม  
-อากาศเย็น เหมาะกับการท่องเที่ยว
+แม่ฮ่องสอนเป็นจังหวัดที่ตั้งอยู่ทางภาคเหนือของประเทศไทย  
+มีภูเขาสลับซับซ้อน ธรรมชาติอุดมสมบูรณ์ และวัฒนธรรมที่เป็นเอกลักษณ์  
+เหมาะสำหรับผู้ที่ต้องการพักผ่อนและสัมผัสธรรมชาติอย่างแท้จริง
 </p>
 
-<br>
+<div class="gallery">
+  <img src="https://s.isanook.com/tr/0/ud/280/1400909/baanjabo1.jpg?ip/crop/w670h402/q80/jpg" alt="ปาย">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjW12CLez0iZYuUc9aoVzjfA4yviMBcrEdBQ&s" alt="บ้านรักไทย">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR33vTd9Ug8SAoELYDni4ugOy16dmpnRA3hgg&s" alt="ภูเขาแม่ฮ่องสอน">
+</div>
+
+<div class="section">
+  <h2>สถานที่ท่องเที่ยวแนะนำ</h2>
+  <p>
+    • ปาย <br>
+    • บ้านรักไทย <br>
+    • ปางอุ๋ง <br>
+    • วัดพระธาตุดอยกองมู
+  </p>
+</div>
+
+<div class="section">
+  <h2>จุดเด่นของแม่ฮ่องสอน</h2>
+  <p>
+    • ธรรมชาติบริสุทธิ์ เงียบสงบ <br>
+    • ภูเขาและทะเลหมอกสวยงาม <br>
+    • วัฒนธรรมชนเผ่าและล้านนา <br>
+    • อากาศเย็นสบายตลอดปี
+  </p>
+</div>
+
+<br><br>
 <a href="index.html">⬅ กลับหน้าแรก</a>
+
+</div>
 
 </body>
 </html>
